@@ -56,7 +56,7 @@ def download_folder(folder_id):
     folder_name = service.files().get(fileId=folder_id).execute()['name']
     # install library 
     url = 'https://github.com/segnolin/google-drive-folder-downloader/raw/master/download.py'
-    path = '/usr/local/lib/python3.6/dist-packages/download.py'
+    path = '/usr/local/lib/python3.7/dist-packages/download.py'
     urlretrieve(url, path)
     # recursive download
     import download
